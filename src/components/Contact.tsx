@@ -57,101 +57,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        {/* Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
-            Get In Touch
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Ready to start your construction project? Contact our team of experts 
-            for a free consultation and personalized quote.
-          </p>
-        </div>
-
-        <div className="grid lg:grid-cols-3 gap-12">
-          {/* Contact Form */}
-          <div className="lg:col-span-2">
-            <Card className="shadow-medium border-0 animate-slide-in">
-              <CardHeader>
-                <CardTitle className="text-2xl text-primary">Send Us a Message</CardTitle>
-                <p className="text-muted-foreground">
-                  Fill out the form below and we'll get back to you within 24 hours.
-                </p>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="firstName">First Name *</Label>
-                    <Input 
-                      id="firstName" 
-                      placeholder="Enter your first name"
-                      className="h-12"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="lastName">Last Name *</Label>
-                    <Input 
-                      id="lastName" 
-                      placeholder="Enter your last name"
-                      className="h-12"
-                    />
-                  </div>
-                </div>
-                
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email Address *</Label>
-                    <Input 
-                      id="email" 
-                      type="email" 
-                      placeholder="your.email@example.com"
-                      className="h-12"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="phone">Phone Number</Label>
-                    <Input 
-                      id="phone" 
-                      type="tel" 
-                      placeholder="+65 XXXX XXXX"
-                      className="h-12"
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="projectType">Project Type</Label>
-                  <select 
-                    id="projectType"
-                    className="w-full h-12 px-3 py-2 border border-input bg-background rounded-lg focus:outline-none focus:ring-2 focus:ring-ring"
-                  >
-                    <option value="">Select project type</option>
-                    <option value="residential">Residential</option>
-                    <option value="commercial">Commercial</option>
-                    <option value="industrial">Industrial</option>
-                    <option value="renovation">Renovation</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message">Project Details *</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Tell us about your project requirements, timeline, and budget..."
-                    className="min-h-32 resize-none"
-                  />
-                </div>
-
-                <Button variant="hero" size="lg" className="w-full">
-                  Send Message
-                  <Send className="w-5 h-5 ml-2" />
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Contact Information */}
+        <div className="max-w-2xl mx-auto">
           <div className="space-y-6 animate-fade-in">
             {contactInfo.map((info, index) => (
               <Card 
@@ -200,20 +106,6 @@ const Contact = () => {
               ))}
             </div>
           </div>
-        </div>
-
-        {/* Emergency Contact Banner */}
-        <div className="mt-16 bg-gradient-secondary rounded-2xl p-8 text-center animate-fade-in">
-          <h3 className="text-2xl font-bold text-secondary-foreground mb-4">
-            Emergency Construction Services
-          </h3>
-          <p className="text-secondary-foreground/90 mb-6 max-w-2xl mx-auto">
-            Need urgent construction or repair services? Our emergency response team 
-            is available 24/7 to handle critical situations.
-          </p>
-          <Button variant="outline" size="lg" className="border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary">
-            Email Us for Emergency Services
-          </Button>
         </div>
       </div>
     </section>
