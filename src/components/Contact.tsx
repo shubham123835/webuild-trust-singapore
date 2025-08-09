@@ -19,7 +19,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      details: ["webuild1@gmail.com"],
+      details: ["webuild.singapore@gmail.com"],
       description: "We reply within 24 hours"
     },
     {

@@ -74,7 +74,7 @@ const Navigation = () => {
               <div className="pt-4 border-t border-border">
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-4">
                   <Mail className="w-4 h-4" />
-                  <span>webuild1@gmail.com</span>
+                  <span>webuild.singapore@gmail.com</span>
                 </div>
                 <Button variant="cta" className="w-full">
                   Get Quote
