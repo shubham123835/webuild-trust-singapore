@@ -43,10 +43,6 @@ const Navigation = () => {
 
           {/* Contact Info & CTA */}
           <div className="hidden lg:flex items-center space-x-4">
-            <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-              <Phone className="w-4 h-4" />
-              <span>+65 8888 8888</span>
-            </div>
             <Button variant="cta" size="sm">
               Get Quote
             </Button>
@@ -76,10 +72,6 @@ const Navigation = () => {
                 </a>
               ))}
               <div className="pt-4 border-t border-border">
-                <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-3">
-                  <Phone className="w-4 h-4" />
-                  <span>+65 8888 8888</span>
-                </div>
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-4">
                   <Mail className="w-4 h-4" />
                   <span>webuild1@gmail.com</span>

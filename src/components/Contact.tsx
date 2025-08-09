@@ -17,15 +17,9 @@ import {
 const Contact = () => {
   const contactInfo = [
     {
-      icon: Phone,
-      title: "Call Us",
-      details: ["+65 8888 8888", "+65 9999 9999"],
-      description: "Mon - Fri: 8:00 AM - 6:00 PM"
-    },
-    {
       icon: Mail,
       title: "Email Us",
-      details: ["webuild1@gmail.com", "projects@webuild.sg"],
+      details: ["webuild1@gmail.com"],
       description: "We reply within 24 hours"
     },
     {
@@ -218,7 +212,7 @@ const Contact = () => {
             is available 24/7 to handle critical situations.
           </p>
           <Button variant="outline" size="lg" className="border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary">
-            Call Emergency Line: +65 8888 8888
+            Email Us for Emergency Services
           </Button>
         </div>
       </div>
